@@ -1,6 +1,7 @@
 <script lang="ts">
   import Versions from './components/Versions.svelte'
   import electronLogo from './assets/electron.svg'
+  import "./App.css"
 
   const ipcHandle = (): void => (window as any).electron.ipcRenderer.send('ping')
 </script>
